@@ -1,0 +1,259 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+
+/* -----HEADER main header for page---------*/
+header {
+    text-align: center;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 999;
+    background: rgba(190, 31,190, 0.9);
+    width: 100%;
+    height: 4em;
+}
+
+main {
+    display: grid;    
+    /*background: #bf4f4f4f; */
+   
+    position: absolute;
+  }
+
+  .main-banner {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .main-banner p {
+   font-size: 3rem;
+  }
+
+
+
+.bar {
+    width: 2rem;
+    height:2rem;
+   
+    display: inline-block;
+    float: right;
+   border-radius: 100%;
+    z-index: 999;
+    position: relative;
+    top: 3.7rem;
+    right: 25rem;
+    color: black;
+  /*  background-color: black; */
+  box-shadow: 
+    0rem 0rem 0 0 currentColor,
+    0rem 0rem 0 0 currentColor,
+    0rem 0rem 0 0 currentColor,
+    0rem 0rem 0 0 currentColor;
+   animation-name: movement; 
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-direction:  normal;
+    cursor: pointer;
+   
+}
+
+.logo {
+    display: inline-block;
+    float:left;
+     margin-top: 5px;
+    margin-left: 0.5em;
+    font-size: 3em;
+    width: 20%;
+
+  
+    
+}
+.logo a {
+    color: black;
+    font-weight: 700;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+ a:hover {
+
+color: tomato;
+}
+
+ul {
+    float: left;
+    margin: 0;
+    padding: 0;    
+   
+    padding-left: 30em;
+    display: inline-block;
+    width: 40%;
+    
+}
+
+li {
+    display: inline-block;
+    padding:0.8em 0.4em;
+    width: 7em;
+    border: 1px solid grey; 
+    background: pink;
+    text-align: center;
+    
+    
+   
+    
+    
+    font-size: 1.4em;
+}
+
+li:hover {
+  
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+.main-banner {
+   background:black;
+   font-family: sans-serif;
+   margin-left: 5rem;
+   color: white;
+   font-size: 12rem;
+  
+}
+.flashy{
+    color: pink;
+}
+
+.banner-nav {
+    background: rgb(207, 138, 78);
+    width: 100%;
+    height: 3rem;
+    position: sticky;
+    top:60px;
+    z-index: 999;
+    padding: 1rem;
+    
+}
+
+.banner-nav ul {
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-size: 12px;
+    display: inline-block;
+    float: left;
+  /*  margin-left: 1em; */
+    
+    
+    
+}
+
+.banner-nav ul li{
+  /*  width: 10%;  */
+    
+    padding-left: 0;
+   
+    display: inline-block;
+    
+}
+
+.banner-nav ul li:hover{
+    /*  width: 10%;  */
+      background:  rgb(207, 138, 78);
+     
+  
+  
+    
+     
+    
+  }
+.banner-nav ul li a{
+    color:black;
+}
+
+
+.article {
+    margin: 6rem;
+}
+
+
+.article h1 {
+    font-size:40px;
+    margin-bottom: 15px;
+    font-weight: 70;
+    color: white;
+    background: black;
+    display: inline-block;
+    padding: 15px;
+}
+
+.article .bold {
+    font-weight: bold;
+}
+
+.article p {
+    font-size: 20px;
+    line-height: 1.5em;
+}
+
+@keyframes movement {
+    from{  box-shadow: 0rem 0 0 currentColor,  0rem 0rem 0 0 currentColor, 0rem 0rem 0 0 currentColor, 0 0 0 0 currentColor;}
+    to{ box-shadow:  1rem 0rem 0 0 hotpink, 2rem 0rem 0 0 lightseagreen, 3rem 0rem 0 0 lightgreen, 4rem 0rem 0 0 yellow}
+}

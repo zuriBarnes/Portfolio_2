@@ -1,5 +1,13 @@
-.rule { 
-    color: green;
-    background: blue;
+
+   //  Variables  //
+   
+   $reallyRed: rgba(220, 22,122, 0.9);
+
+body {
+    background: $reallyRed;
 }
 
+h1 { 
+    color: grey;
+    
+}
